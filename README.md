@@ -1,5 +1,7 @@
 # ApiTutorialTDD
 
+This project is an example using test-driven development (TDD) with integration tests for an API. The project is based on the following tutorial.
+
 Tutorial: https://www.freecodecamp.org/news/learn-tdd-with-integration-tests-in-net-5-0/
 
 ## Business Requirements
@@ -21,13 +23,13 @@ dotnet new sln
 dotnet new webapi --name TDD
 dotnet new xunit --name TDD.Tests
 cd TDD
-dotnet add package Microsoft.EntityFrameworkCore --version 5.0.5
+dotnet add package Microsoft.EntityFrameworkCore
 cd ../TDD.Tests
 dotnet add reference ../TDD/TDD.csproj
-dotnet add package Microsoft.EntityFrameworkCore --version 5.0.5
-dotnet add package Microsoft.AspNetCore.Hosting --version 2.2.7
-dotnet add package Microsoft.AspNetCore.Mvc.Testing --version 5.0.5
-dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 5.0.5
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.AspNetCore.Hosting
+dotnet add package Microsoft.AspNetCore.Mvc.Testing
+dotnet add package Microsoft.EntityFrameworkCore.InMemory
 cd ..
 dotnet sln add TDD/TDD.csproj
 dotnet sln add TDD.Tests/TDD.Tests.csproj
