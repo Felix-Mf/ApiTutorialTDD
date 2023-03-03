@@ -32,5 +32,11 @@ namespace TDD.Controllers
                 return BadRequest();
             }
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetPatientAsync()
+        {
+            return BadRequest();
+        }
     }
 }
